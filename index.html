@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<div class="container" id="GamePad">
+    <form id="myForm">
+        <div class="row m-5">
+            <div class="col-4">
+                <div class="profile_pic_holder" id="setImg">
+                    <div class='camera-holder mx-auto text-center'>
+                        <div class='camera'>
+                            <img src="img/123.png" id="defaultImg1" style="border-radius:50%;" height="60%" width="60%">
+                        </div>
+                        <br />
+                        <br />
+                        <button type="button" class="btn btn-primary btn-sm capture" id="cambutton1">Open
+                            Camera</button>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-4 mt-4" id="player1name" placeholder="Player 1">
+                <input type="text" class="form-control" id="player1choice" placeholder="Player One Choice">
+            </div>
+
+            <div class="col-4">
+                <div class="profile_pic_holder">
+                    <div class='camera-holder mx-auto text-center'>
+                        <div class='camera'>
+                            <img src="img/123.png" id="defaultImg2" style="border-radius: 50%;" height="60%"
+                                width="60%">
+                        </div>
+                        <br />
+                        <br />
+                        <button type="button" class="btn btn-primary btn-sm capture" id="cambutton2">Open
+                            Camera</button>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-4 mt-4" id="player2name" placeholder="Player 2">
+                <input type="text" class="form-control" id="player2choice" placeholder="Player Two Choice">
+            </div>
+            <div class="col-4">
+                <div class="profile_pic_holder">
+                    <div class='camera-holder mx-auto text-center'>
+                        <div class='camera'>
+                            <img src="img/123.png" id="defaultImg3" style="border-radius: 50%;" height="60%"
+                                width="60%">
+                        </div>
+                        <br />
+                        <br /><button type="button" class="btn btn-primary btn-sm capture" id="cambutton3">Open
+                            Camera</button>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-4 mt-4" id="player3name" placeholder="Player 3">
+                <input type="text" class="form-control" id="player3choice" placeholder="Player Three Choice">
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-8">
+                <input type="text" class="form-control" id="stat" placeholder="Statement">
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-5"></div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Decide</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="gameArea">
+    <div class="row m-5">
+        <div class="col-md-4">
+            <img src="img/123.png" class="ml-5" style="border-radius: 50%;" height="100%" width="60%" id="profilepic1">
+        </div>
+        <div class="col-md-4">
+            <img src="img/123.png" class="ml-5" style="border-radius: 50%;" height="100%" width="60%" id="profilepic2">
+        </div>
+        <div class="col-md-4">
+            <img src="img/123.png" class="ml-5" style="border-radius: 50%;" height="100%" width="60%" id="profilepic3">
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+<script src="capture.js"></script>
+</body>
+
+</html>
